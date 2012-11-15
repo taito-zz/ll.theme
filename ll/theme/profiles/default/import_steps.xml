@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="ll.theme.various"
+               version="20121115-01"
+               handler="ll.theme.setuphandlers.setupVarious"
+               title="ll.theme: miscellaneous import steps">
+    Various import steps that are not handled by GS import/export
+    handlers.
+    <dependency step="metadata"/>
+  </import-step>
+</import-steps>

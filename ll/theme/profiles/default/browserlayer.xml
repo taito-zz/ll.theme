@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="ll.theme"
+    interface="ll.theme.browser.interfaces.ILlThemeLayer"
+    />
+</layers>

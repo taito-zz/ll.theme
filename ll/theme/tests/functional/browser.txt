@@ -1,0 +1,9 @@
+Log in as Manager::
+
+    >>> browser.login(TEST_USER_NAME, TEST_USER_PASSWORD)
+
+Doctype should be <!DOCTYPE html>::
+
+    >>> print browser.contents
+    <!DOCTYPE html>
+    ...
