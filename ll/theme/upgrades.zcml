@@ -1,0 +1,16 @@
+<configure
+  i18n_domain="ll.theme"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <genericsetup:upgradeStep
+    description="Installs Products.PloneFormGen and collective.cropimage."
+    destination="1"
+    handler="ll.theme.upgrades.upgrade_0_to_1"
+    profile="ll.theme:default"
+    sortkey="1"
+    source="0"
+    title="Installs packages"
+    />
+
+</configure>

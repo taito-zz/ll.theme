@@ -22,6 +22,8 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'Products.PloneFormGen',
+        'collective.cropimage',
         'five.grok',
         'hexagonit.testing',
         'plone.app.theming',

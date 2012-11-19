@@ -12,16 +12,16 @@ class TestCase(IntegrationTestCase):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.assertTrue(installer.isProductInstalled('ll.theme'))
 
-    def get_action(self, name):
-        """Get action.
+    # def get_action(self, name):
+    #     """Get action.
 
-        :param name: Name of action.
-        :param type: str
+    #     :param name: Name of action.
+    #     :param type: str
 
-        :rtype: action
-        """
-        return getattr(getattr(getToolByName(
-            self.portal, 'portal_actions'), 'object_buttons'), name, None)
+    #     :rtype: action
+    #     """
+    #     return getattr(getattr(getToolByName(
+    #         self.portal, 'portal_actions'), 'object_buttons'), name, None)
 
     def test_browserlayer(self):
         from ll.theme.browser.interfaces import ILlThemeLayer
@@ -122,7 +122,15 @@ class TestCase(IntegrationTestCase):
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
-            setup.getVersionForProfile('profile-ll.theme:default'), u'0')
+            setup.getVersionForProfile('profile-ll.theme:default'), u'1')
+
+    def test_metadata__dependency__Products_PloneFormGen(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('PloneFormGen'))
+
+    def test_metadata__dependency__collective_cropimage(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('collective.cropimage'))
 
     def test_metadata__dependency__plone_app_theming(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')

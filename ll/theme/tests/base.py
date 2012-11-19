@@ -2,6 +2,7 @@ from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
+from plone.testing import z2
 
 import unittest
 
@@ -12,6 +13,10 @@ class LlThemeLayer(PloneSandboxLayer):
 
     def setUpZope(self, app, configurationContext):
         """Set up Zope."""
+
+        import Products.PloneFormGen
+        self.loadZCML(package=Products.PloneFormGen)
+        z2.installProduct(app, 'Products.PloneFormGen')
 
         # Load ZCML
         import ll.theme
@@ -24,6 +29,7 @@ class LlThemeLayer(PloneSandboxLayer):
 
     def tearDownZope(self, app):
         """Tear down Zope."""
+        z2.uninstallProduct(app, 'Products.PloneFormGen')
 
 
 FIXTURE = LlThemeLayer()
