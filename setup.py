@@ -22,16 +22,15 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'Products.CMFPlone>=4.2',
         'Products.PloneFormGen',
+        'collective.contentleadimage',
         'collective.cropimage',
         'five.grok',
         'hexagonit.testing',
         'plone.app.theming',
         'plone.app.themingplugins',
-        'plone.browserlayer',
-        'setuptools',
-        'z3c.autoinclude',
-        'zope.i18nmessageid'],
+        'setuptools'],
     entry_points="""
     # -*- Entry points: -*-
 

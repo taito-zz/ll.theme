@@ -128,6 +128,10 @@ class TestCase(IntegrationTestCase):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('PloneFormGen'))
 
+    def test_metadata__dependency__collective_contentleadimage(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('collective.contentleadimage'))
+
     def test_metadata__dependency__collective_cropimage(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('collective.cropimage'))
