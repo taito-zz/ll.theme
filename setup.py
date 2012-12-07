@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='ll.theme',
-    version='0.0.0.1',
+    version='0.1',
     description="LL site theme.",
     long_description=open("README.rst").read(),
     classifiers=[
@@ -15,7 +15,7 @@ setup(
     keywords='',
     author='Taito Horiuchi',
     author_email='taito.horiuchi@abita.fi',
-    url='http://www.luontoliitto.fi/',
+    url='https://github.com/taito/ll.theme',
     license='None-free',
     packages=find_packages('src', exclude=['ez_setup']),
     package_dir={'': 'src'},
