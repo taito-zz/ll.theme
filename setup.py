@@ -15,7 +15,7 @@ setup(
     keywords='',
     author='Taito Horiuchi',
     author_email='taito.horiuchi@abita.fi',
-    url='http://www.ll.fi/',
+    url='http://www.luontoliitto.fi/',
     license='None-free',
     packages=find_packages('src', exclude=['ez_setup']),
     package_dir={'': 'src'},
@@ -23,15 +23,12 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'Products.CMFPlone>=4.2',
-        'Products.PloneFormGen',
-        'collective.contentleadimage',
-        'collective.cropimage',
-        'five.grok',
         'hexagonit.testing',
         'plone.app.theming',
-        'plone.app.themingplugins',
-        'setuptools'],
+        'setuptools',
+        'sll.basetheme',
+        'sll.carousel',
+        'sll.templates'],
     entry_points="""
     # -*- Entry points: -*-
 

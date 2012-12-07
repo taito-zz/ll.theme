@@ -26,7 +26,7 @@ class TestCase(IntegrationTestCase):
         self.assertFalse(installer.isProductInstalled('collective.cropimage'))
 
         from ll.theme.upgrades import install_packages
-        logger =  mock.Mock()
+        logger = mock.Mock()
         install_packages(self.portal, ['collective.cropimage'], logger)
 
         self.assertTrue(installer.isProductInstalled('collective.cropimage'))

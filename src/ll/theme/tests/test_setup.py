@@ -12,17 +12,6 @@ class TestCase(IntegrationTestCase):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.assertTrue(installer.isProductInstalled('ll.theme'))
 
-    # def get_action(self, name):
-    #     """Get action.
-
-    #     :param name: Name of action.
-    #     :param type: str
-
-    #     :rtype: action
-    #     """
-    #     return getattr(getattr(getToolByName(
-    #         self.portal, 'portal_actions'), 'object_buttons'), name, None)
-
     def test_browserlayer(self):
         from ll.theme.browser.interfaces import ILlThemeLayer
         from plone.browserlayer import utils
@@ -149,10 +138,6 @@ class TestCase(IntegrationTestCase):
     def test_them__currentTheme(self):
         theme = self.get_theme()
         self.assertEqual(theme.currentTheme, u'll.theme')
-
-    def test_theme__doctype(self):
-        theme = self.get_theme()
-        self.assertEqual(theme.doctype, '<!DOCTYPE html>')
 
     def test_theme__enabled(self):
         theme = self.get_theme()
