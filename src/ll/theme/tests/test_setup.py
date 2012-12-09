@@ -108,26 +108,26 @@ class TestCase(IntegrationTestCase):
         resource = self.get_css_resource('++theme++ll.theme/css/main.css')
         self.assertTrue(resource.getApplyPrefix())
 
+    def test_metadata__dependency__plone_app_theming(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('plone.app.theming'))
+
+    def test_metadata__dependency__sll_basetheme(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('sll.basetheme'))
+
+    def test_metadata__dependency__sll_carousel(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('sll.carousel'))
+
+    def test_metadata__dependency__sll_templates(self):
+        installer = getToolByName(self.portal, 'portal_quickinstaller')
+        self.failUnless(installer.isProductInstalled('sll.templates'))
+
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
             setup.getVersionForProfile('profile-ll.theme:default'), u'1')
-
-    def test_metadata__dependency__Products_PloneFormGen(self):
-        installer = getToolByName(self.portal, 'portal_quickinstaller')
-        self.failUnless(installer.isProductInstalled('PloneFormGen'))
-
-    def test_metadata__dependency__collective_contentleadimage(self):
-        installer = getToolByName(self.portal, 'portal_quickinstaller')
-        self.failUnless(installer.isProductInstalled('collective.contentleadimage'))
-
-    def test_metadata__dependency__collective_cropimage(self):
-        installer = getToolByName(self.portal, 'portal_quickinstaller')
-        self.failUnless(installer.isProductInstalled('collective.cropimage'))
-
-    def test_metadata__dependency__plone_app_theming(self):
-        installer = getToolByName(self.portal, 'portal_quickinstaller')
-        self.failUnless(installer.isProductInstalled('plone.app.theming'))
 
     def get_theme(self):
         from plone.app.theming.interfaces import IThemeSettings
