@@ -6,17 +6,11 @@
   xmlns:plone="http://namespaces.plone.org/plone"
   xmlns="http://namespaces.zope.org/zope">
 
-  <include package="plone.app.theming" />
   <include package="sll.basetheme" />
   <include package="sll.carousel" />
   <include package="sll.templates" />
+  <include file="upgrades.zcml"/>
   <i18n:registerTranslations directory="locales" />
-
-  <plone:static
-    directory="resources"
-    name="ll.theme"
-    type="theme"
-    />
 
   <genericsetup:registerProfile
     description="Installs ll.theme package"

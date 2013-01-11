@@ -39,3 +39,9 @@ class TestCase(IntegrationTestCase):
         logger = logging.getLogger()
         upgrade_0_to_1(self.portal, logger)
         install_packages.assert_called_with(self.portal, ['collective.folderlogo', 'Products.PloneFormGen'], logger)
+
+    @mock.patch('ll.theme.upgrades.reimport_profile')
+    def test_reimport_cssregistry(self, reimport_profile):
+        from ll.theme.upgrades import reimport_cssregistry
+        reimport_cssregistry(self.portal)
+        reimport_profile.assert_called_with(self.portal, 'profile-ll.theme:default', 'cssregistry')

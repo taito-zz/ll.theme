@@ -23,8 +23,8 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'abita.utils',
         'hexagonit.testing',
-        'plone.app.theming',
         'setuptools',
         'sll.basetheme',
         'sll.carousel',

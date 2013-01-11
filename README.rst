@@ -7,6 +7,11 @@ LL site theme.
 Changelog
 ---------
 
+0.3 (2013-01-11)
+================
+
+- Removed dependency from plone.app.theming. [taito]
+
 0.2 (2012-12-09)
 ================
 

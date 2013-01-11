@@ -20,97 +20,309 @@ class TestCase(IntegrationTestCase):
     def get_css_resource(self, name):
         return getToolByName(self.portal, 'portal_css').getResource(name)
 
-    def test_cssregistry__jquerytools_dateinput__title(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__title(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertIsNone(resource.getTitle())
 
-    def test_cssregistry__jquerytools_dateinput__authenticated(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__authenticated(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertFalse(resource.getAuthenticated())
 
-    def test_cssregistry__jquerytools_dateinput__compression(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
-        self.assertEqual(resource.getCompression(), 'safe')
+    def test_cssregistry__Montserrat_400_700__compression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
+        self.assertEqual(resource.getCompression(), 'none')
 
-    def test_cssregistry__jquerytools_dateinput__conditionalcomment(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__conditionalcomment(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertEqual(resource.getConditionalcomment(), '')
 
-    def test_cssregistry__jquerytools_dateinput__cookable(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
-        self.assertTrue(resource.getCookable())
+    def test_cssregistry__Montserrat_400_700__cookable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
+        self.assertFalse(resource.getCookable())
 
-    def test_cssregistry__jquerytools_dateinput__enabled(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__enabled(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertTrue(resource.getEnabled())
 
-    def test_cssregistry__jquerytools_dateinput__expression(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__expression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertEqual(resource.getExpression(), '')
 
-    def test_cssregistry__jquerytools_dateinput__media(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__media(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertEqual(resource.getMedia(), 'screen')
 
-    def test_cssregistry__jquerytools_dateinput__rel(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__rel(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertEqual(resource.getRel(), 'stylesheet')
 
-    def test_cssregistry__jquerytools_dateinput__rendering(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__rendering(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertEqual(resource.getRendering(), 'link')
 
-    def test_cssregistry__jquerytools_dateinput__applyPrefix(self):
-        resource = self.get_css_resource('++resource++plone.app.jquerytools.dateinput.css')
+    def test_cssregistry__Montserrat_400_700__applyPrefix(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertTrue(resource.getApplyPrefix())
 
-    def test_cssregistry__main__title(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
+    def test_cssregistry__Montserrat_Alternates_400_700__title(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertIsNone(resource.getTitle())
 
-    def test_cssregistry__main__authenticated(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
+    def test_cssregistry__Montserrat_Alternates_400_700__authenticated(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertFalse(resource.getAuthenticated())
 
-    def test_cssregistry__main__compression(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
-        self.assertEqual(resource.getCompression(), 'safe')
+    def test_cssregistry__Montserrat_Alternates_400_700__compression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
+        self.assertEqual(resource.getCompression(), 'none')
 
-    def test_cssregistry__main__conditionalcomment(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
+    def test_cssregistry__Montserrat_Alternates_400_700__conditionalcomment(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertEqual(resource.getConditionalcomment(), '')
 
-    def test_cssregistry__main__cookable(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
-        self.assertTrue(resource.getCookable())
+    def test_cssregistry__Montserrat_Alternates_400_700__cookable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
+        self.assertFalse(resource.getCookable())
 
-    def test_cssregistry__main__enabled(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
+    def test_cssregistry__Montserrat_Alternates_400_700__enabled(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertTrue(resource.getEnabled())
 
-    def test_cssregistry__main__expression(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
-        self.assertEqual(resource.getExpression(), 'request/HTTP_X_THEME_ENABLED | nothing')
+    def test_cssregistry__Montserrat_Alternates_400_700__expression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
+        self.assertEqual(resource.getExpression(), '')
 
-    def test_cssregistry__main__media(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
-        self.assertIsNone(resource.getMedia())
+    def test_cssregistry__Montserrat_Alternates_400_700__media(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
+        self.assertEqual(resource.getMedia(), 'screen')
 
-    def test_cssregistry__main__rel(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
+    def test_cssregistry__Montserrat_Alternates_400_700__rel(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertEqual(resource.getRel(), 'stylesheet')
 
-    def test_cssregistry__main__rendering(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
+    def test_cssregistry__Montserrat_Alternates_400_700__rendering(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertEqual(resource.getRendering(), 'link')
 
-    def test_cssregistry__main__applyPrefix(self):
-        resource = self.get_css_resource('++theme++ll.theme/css/main.css')
+    def test_cssregistry__Montserrat_Alternates_400_700__applyPrefix(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertTrue(resource.getApplyPrefix())
 
-    def test_metadata__dependency__plone_app_theming(self):
-        installer = getToolByName(self.portal, 'portal_quickinstaller')
-        self.failUnless(installer.isProductInstalled('plone.app.theming'))
+    def test_cssregistry__Droid_Sans_400_700__title(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertIsNone(resource.getTitle())
+
+    def test_cssregistry__Droid_Sans_400_700__authenticated(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Droid_Sans_400_700__compression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertEqual(resource.getCompression(), 'none')
+
+    def test_cssregistry__Droid_Sans_400_700__conditionalcomment(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__Droid_Sans_400_700__cookable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertFalse(resource.getCookable())
+
+    def test_cssregistry__Droid_Sans_400_700__enabled(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__Droid_Sans_400_700__expression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertEqual(resource.getExpression(), '')
+
+    def test_cssregistry__Droid_Sans_400_700__media(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__Droid_Sans_400_700__rel(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__Droid_Sans_400_700__rendering(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__Droid_Sans_400_700__applyPrefix(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertTrue(resource.getApplyPrefix())
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__title(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertIsNone(resource.getTitle())
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__authenticated(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__compression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertEqual(resource.getCompression(), 'none')
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__conditionalcomment(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__cookable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertFalse(resource.getCookable())
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__enabled(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__expression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertEqual(resource.getExpression(), '')
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__media(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__rel(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__rendering(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__applyPrefix(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertTrue(resource.getApplyPrefix())
+
+    def test_cssregistry__Archivo_Black__title(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertIsNone(resource.getTitle())
+
+    def test_cssregistry__Archivo_Black__authenticated(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Archivo_Black__compression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertEqual(resource.getCompression(), 'none')
+
+    def test_cssregistry__Archivo_Black__conditionalcomment(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__Archivo_Black__cookable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertFalse(resource.getCookable())
+
+    def test_cssregistry__Archivo_Black__enabled(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__Archivo_Black__expression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertEqual(resource.getExpression(), '')
+
+    def test_cssregistry__Archivo_Black__media(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__Archivo_Black__rel(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__Archivo_Black__rendering(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__Archivo_Black__applyPrefix(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertTrue(resource.getApplyPrefix())
+
+    def test_cssregistry__Crete_Round_400_400italic__title(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertIsNone(resource.getTitle())
+
+    def test_cssregistry__Crete_Round_400_400italic__authenticated(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Crete_Round_400_400italic__compression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertEqual(resource.getCompression(), 'none')
+
+    def test_cssregistry__Crete_Round_400_400italic__conditionalcomment(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__Crete_Round_400_400italic__cookable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertFalse(resource.getCookable())
+
+    def test_cssregistry__Crete_Round_400_400italic__enabled(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__Crete_Round_400_400italic__expression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertEqual(resource.getExpression(), '')
+
+    def test_cssregistry__Crete_Round_400_400italic__media(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__Crete_Round_400_400italic__rel(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__Crete_Round_400_400italic__rendering(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertEqual(resource.getRendering(), 'link')
+
+    def test_cssregistry__Crete_Round_400_400italic__applyPrefix(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertTrue(resource.getApplyPrefix())
+
+    def test_cssregistry__Cambo__title(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertIsNone(resource.getTitle())
+
+    def test_cssregistry__Cambo__authenticated(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Cambo__compression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertEqual(resource.getCompression(), 'none')
+
+    def test_cssregistry__Cambo__conditionalcomment(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__Cambo__cookable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertFalse(resource.getCookable())
+
+    def test_cssregistry__Cambo__enabled(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__Cambo__expression(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertEqual(resource.getExpression(), '')
+
+    def test_cssregistry__Cambo__media(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__Cambo__rel(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__Cambo__rendering(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertEqual(resource.getRendering(), 'link')
 
     def test_metadata__dependency__sll_basetheme(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
@@ -127,21 +339,21 @@ class TestCase(IntegrationTestCase):
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
-            setup.getVersionForProfile('profile-ll.theme:default'), u'1')
+            setup.getVersionForProfile('profile-ll.theme:default'), u'2')
 
-    def get_theme(self):
-        from plone.app.theming.interfaces import IThemeSettings
-        from plone.registry.interfaces import IRegistry
-        from zope.component import getUtility
-        return getUtility(IRegistry).forInterface(IThemeSettings)
+    # def get_theme(self):
+    #     from plone.app.theming.interfaces import IThemeSettings
+    #     from plone.registry.interfaces import IRegistry
+    #     from zope.component import getUtility
+    #     return getUtility(IRegistry).forInterface(IThemeSettings)
 
-    def test_them__currentTheme(self):
-        theme = self.get_theme()
-        self.assertEqual(theme.currentTheme, u'll.theme')
+    # def test_them__currentTheme(self):
+    #     theme = self.get_theme()
+    #     self.assertEqual(theme.currentTheme, u'll.theme')
 
-    def test_theme__enabled(self):
-        theme = self.get_theme()
-        self.assertTrue(theme.enabled)
+    # def test_theme__enabled(self):
+    #     theme = self.get_theme()
+    #     self.assertTrue(theme.enabled)
 
     def uninstall_package(self):
         """Uninstall package: ll.theme."""
@@ -159,7 +371,7 @@ class TestCase(IntegrationTestCase):
         from plone.browserlayer import utils
         self.assertNotIn(ILlThemeLayer, utils.registered_layers())
 
-    def test_uninstall__cssregistry_main(self):
-        self.uninstall_package()
-        resources = set(getToolByName(self.portal, 'portal_css').getResourceIds())
-        self.assertNotIn('++theme++ll.theme/css/main.css', resources)
+    # def test_uninstall__cssregistry_Droid_Serif_400_700_700italic_400italic(self):
+    #     self.uninstall_package()
+    #     resources = set(getToolByName(self.portal, 'portal_css').getResourceIds())
+    #     self.assertNotIn('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700', resources)
