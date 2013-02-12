@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='ll.theme',
-    version='0.3',
+    version='0.4',
     description="LL site theme.",
     long_description=open("README.rst").read(),
     classifiers=[
