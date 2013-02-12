@@ -7,6 +7,11 @@ LL site theme.
 Changelog
 ---------
 
+0.5 (2013-02-12)
+================
+
+- Made external resources not cacheable. [taito]
+
 0.4 (2013-02-12)
 ================
 

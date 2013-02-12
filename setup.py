@@ -24,6 +24,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'abita.utils',
+        'five.grok',
         'hexagonit.testing',
         'setuptools',
         'sll.basetheme',

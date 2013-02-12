@@ -28,6 +28,10 @@ class TestCase(IntegrationTestCase):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertFalse(resource.getAuthenticated())
 
+    def test_cssregistry__Montserrat_400_700__cacheable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
+        self.assertFalse(resource.getCacheable())
+
     def test_cssregistry__Montserrat_400_700__compression(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat:400,700')
         self.assertEqual(resource.getCompression(), 'none')
@@ -71,6 +75,10 @@ class TestCase(IntegrationTestCase):
     def test_cssregistry__Montserrat_Alternates_400_700__authenticated(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
         self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Montserrat_Alternates_400_700__cacheable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
+        self.assertFalse(resource.getCacheable())
 
     def test_cssregistry__Montserrat_Alternates_400_700__compression(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700')
@@ -116,6 +124,10 @@ class TestCase(IntegrationTestCase):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
         self.assertFalse(resource.getAuthenticated())
 
+    def test_cssregistry__Droid_Sans_400_700__cacheable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+        self.assertFalse(resource.getCacheable())
+
     def test_cssregistry__Droid_Sans_400_700__compression(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Sans:400,700')
         self.assertEqual(resource.getCompression(), 'none')
@@ -159,6 +171,10 @@ class TestCase(IntegrationTestCase):
     def test_cssregistry__Droid_Serif_400_700_700italic_400italic__authenticated(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
         self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Droid_Serif_400_700_700italic_400italic__cacheable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
+        self.assertFalse(resource.getCacheable())
 
     def test_cssregistry__Droid_Serif_400_700_700italic_400italic__compression(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic')
@@ -204,6 +220,10 @@ class TestCase(IntegrationTestCase):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
         self.assertFalse(resource.getAuthenticated())
 
+    def test_cssregistry__Archivo_Black__cacheable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
+        self.assertFalse(resource.getCacheable())
+
     def test_cssregistry__Archivo_Black__compression(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Archivo+Black')
         self.assertEqual(resource.getCompression(), 'none')
@@ -247,6 +267,10 @@ class TestCase(IntegrationTestCase):
     def test_cssregistry__Crete_Round_400_400italic__authenticated(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
         self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__Crete_Round_400_400italic__cacheable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
+        self.assertFalse(resource.getCacheable())
 
     def test_cssregistry__Crete_Round_400_400italic__compression(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Crete+Round:400,400italic')
@@ -292,6 +316,10 @@ class TestCase(IntegrationTestCase):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
         self.assertFalse(resource.getAuthenticated())
 
+    def test_cssregistry__Cambo__cacheable(self):
+        resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
+        self.assertFalse(resource.getCacheable())
+
     def test_cssregistry__Cambo__compression(self):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
         self.assertEqual(resource.getCompression(), 'none')
@@ -331,6 +359,10 @@ class TestCase(IntegrationTestCase):
     def test_cssregistry__main__authenticated(self):
         resource = self.get_css_resource('++resource++ll.theme/css/main.css')
         self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__main__cacheable(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertTrue(resource.getCacheable())
 
     def test_cssregistry__main__compression(self):
         resource = self.get_css_resource('++resource++ll.theme/css/main.css')

@@ -2,118 +2,6 @@
 <object name="portal_css">
 
   <stylesheet
-    title=""
-    authenticated="False"
-    cacheable="True"
-    compression=""
-    conditionalcomment=""
-    cookable="False"
-    enabled="on"
-    expression=""
-    id="http://fonts.googleapis.com/css?family=Montserrat:400,700"
-    media="screen"
-    rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
-  <stylesheet
-    title=""
-    authenticated="False"
-    cacheable="True"
-    compression=""
-    conditionalcomment=""
-    cookable="False"
-    enabled="on"
-    expression=""
-    id="http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700"
-    media="screen"
-    rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
-  <stylesheet
-    title=""
-    authenticated="False"
-    cacheable="True"
-    compression=""
-    conditionalcomment=""
-    cookable="False"
-    enabled="on"
-    expression=""
-    id="http://fonts.googleapis.com/css?family=Droid+Sans:400,700"
-    media="screen"
-    rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
-  <stylesheet
-    title=""
-    authenticated="False"
-    cacheable="True"
-    compression=""
-    conditionalcomment=""
-    cookable="False"
-    enabled="on"
-    expression=""
-    id="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic"
-    media="screen"
-    rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
-  <stylesheet
-    title=""
-    authenticated="False"
-    cacheable="True"
-    compression=""
-    conditionalcomment=""
-    cookable="False"
-    enabled="on"
-    expression=""
-    id="http://fonts.googleapis.com/css?family=Archivo+Black"
-    media="screen"
-    rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
-  <stylesheet
-    title=""
-    authenticated="False"
-    cacheable="True"
-    compression=""
-    conditionalcomment=""
-    cookable="False"
-    enabled="on"
-    expression=""
-    id="http://fonts.googleapis.com/css?family=Crete+Round:400,400italic"
-    media="screen"
-    rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
-  <stylesheet
-    title=""
-    authenticated="False"
-    cacheable="True"
-    compression=""
-    conditionalcomment=""
-    cookable="False"
-    enabled="on"
-    expression=""
-    id="http://fonts.googleapis.com/css?family=Cambo"
-    media="screen"
-    rel="stylesheet"
-    rendering="link"
-    applyPrefix="True"
-    />
-
-  <stylesheet
     applyPrefix="True"
     authenticated="False"
     cacheable="True"
@@ -129,5 +17,116 @@
     title=""
     />
 
+  <stylesheet
+    title=""
+    authenticated="False"
+    cacheable="False"
+    compression="none"
+    conditionalcomment=""
+    cookable="False"
+    enabled="on"
+    expression=""
+    id="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+  <stylesheet
+    title=""
+    authenticated="False"
+    cacheable="False"
+    compression="none"
+    conditionalcomment=""
+    cookable="False"
+    enabled="on"
+    expression=""
+    id="http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+  <stylesheet
+    title=""
+    authenticated="False"
+    cacheable="False"
+    compression="none"
+    conditionalcomment=""
+    cookable="False"
+    enabled="on"
+    expression=""
+    id="http://fonts.googleapis.com/css?family=Droid+Sans:400,700"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+  <stylesheet
+    title=""
+    authenticated="False"
+    cacheable="False"
+    compression="none"
+    conditionalcomment=""
+    cookable="False"
+    enabled="on"
+    expression=""
+    id="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+  <stylesheet
+    title=""
+    authenticated="False"
+    cacheable="False"
+    compression="none"
+    conditionalcomment=""
+    cookable="False"
+    enabled="on"
+    expression=""
+    id="http://fonts.googleapis.com/css?family=Archivo+Black"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+  <stylesheet
+    title=""
+    authenticated="False"
+    cacheable="False"
+    compression="none"
+    conditionalcomment=""
+    cookable="False"
+    enabled="on"
+    expression=""
+    id="http://fonts.googleapis.com/css?family=Crete+Round:400,400italic"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+  <stylesheet
+    title=""
+    authenticated="False"
+    cacheable="False"
+    compression="none"
+    conditionalcomment=""
+    cookable="False"
+    enabled="on"
+    expression=""
+    id="http://fonts.googleapis.com/css?family=Cambo"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    applyPrefix="True"
+    />
 
 </object>
