@@ -324,6 +324,46 @@ class TestCase(IntegrationTestCase):
         resource = self.get_css_resource('http://fonts.googleapis.com/css?family=Cambo')
         self.assertEqual(resource.getRendering(), 'link')
 
+    def test_cssregistry__main__title(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertIsNone(resource.getTitle())
+
+    def test_cssregistry__main__authenticated(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertFalse(resource.getAuthenticated())
+
+    def test_cssregistry__main__compression(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertEqual(resource.getCompression(), 'safe')
+
+    def test_cssregistry__main__conditionalcomment(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertEqual(resource.getConditionalcomment(), '')
+
+    def test_cssregistry__main__cookable(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertTrue(resource.getCookable())
+
+    def test_cssregistry__main__enabled(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertTrue(resource.getEnabled())
+
+    def test_cssregistry__main__expression(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertEqual(resource.getExpression(), '')
+
+    def test_cssregistry__main__media(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertEqual(resource.getMedia(), 'screen')
+
+    def test_cssregistry__main__rel(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertEqual(resource.getRel(), 'stylesheet')
+
+    def test_cssregistry__main__rendering(self):
+        resource = self.get_css_resource('++resource++ll.theme/css/main.css')
+        self.assertEqual(resource.getRendering(), 'link')
+
     def test_metadata__dependency__sll_basetheme(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')
         self.failUnless(installer.isProductInstalled('sll.basetheme'))
@@ -339,21 +379,7 @@ class TestCase(IntegrationTestCase):
     def test_metadata__version(self):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
-            setup.getVersionForProfile('profile-ll.theme:default'), u'2')
-
-    # def get_theme(self):
-    #     from plone.app.theming.interfaces import IThemeSettings
-    #     from plone.registry.interfaces import IRegistry
-    #     from zope.component import getUtility
-    #     return getUtility(IRegistry).forInterface(IThemeSettings)
-
-    # def test_them__currentTheme(self):
-    #     theme = self.get_theme()
-    #     self.assertEqual(theme.currentTheme, u'll.theme')
-
-    # def test_theme__enabled(self):
-    #     theme = self.get_theme()
-    #     self.assertTrue(theme.enabled)
+            setup.getVersionForProfile('profile-ll.theme:default'), u'3')
 
     def uninstall_package(self):
         """Uninstall package: ll.theme."""
@@ -370,8 +396,3 @@ class TestCase(IntegrationTestCase):
         from ll.theme.browser.interfaces import ILlThemeLayer
         from plone.browserlayer import utils
         self.assertNotIn(ILlThemeLayer, utils.registered_layers())
-
-    # def test_uninstall__cssregistry_Droid_Serif_400_700_700italic_400italic(self):
-    #     self.uninstall_package()
-    #     resources = set(getToolByName(self.portal, 'portal_css').getResourceIds())
-    #     self.assertNotIn('http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700', resources)

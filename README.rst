@@ -7,6 +7,11 @@ LL site theme.
 Changelog
 ---------
 
+0.4 (2013-02-12)
+================
+
+- Added css to override navigation's background color. [taito]
+
 0.3 (2013-01-11)
 ================
 

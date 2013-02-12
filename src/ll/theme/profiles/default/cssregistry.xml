@@ -113,4 +113,21 @@
     applyPrefix="True"
     />
 
+  <stylesheet
+    applyPrefix="True"
+    authenticated="False"
+    cacheable="True"
+    compression="safe"
+    conditionalcomment=""
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="++resource++ll.theme/css/main.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"
+    title=""
+    />
+
+
 </object>
