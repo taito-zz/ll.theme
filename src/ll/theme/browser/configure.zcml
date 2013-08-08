@@ -1,0 +1,12 @@
+<configure
+  i18n_domain="ll.theme"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <browser:resourceDirectory
+    name="ll.theme"
+    directory="static"
+    layer=".interfaces.ILlThemeLayer"
+    />
+
+</configure>

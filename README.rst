@@ -7,6 +7,11 @@ LL site theme.
 Changelog
 ---------
 
+0.6 (2013-08-08)
+================
+
+- Remove dependency from five.grok. [taito]
+
 0.5 (2013-02-12)
 ================
 
