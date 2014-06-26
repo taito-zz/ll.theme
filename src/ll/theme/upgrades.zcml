@@ -13,24 +13,4 @@
     title="Installs packages"
     />
 
-  <genericsetup:upgradeStep
-    description=""
-    destination="2"
-    handler="ll.theme.upgrades.reimport_cssregistry"
-    profile="ll.theme:default"
-    sortkey="1"
-    source="1"
-    title="Reimport cssregistry"
-    />
-
-  <genericsetup:upgradeStep
-    description=""
-    destination="3"
-    handler="ll.theme.upgrades.reimport_cssregistry"
-    profile="ll.theme:default"
-    sortkey="0"
-    source="2"
-    title="Reimport cssregistry"
-    />
-
 </configure>

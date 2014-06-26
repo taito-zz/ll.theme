@@ -7,6 +7,11 @@ LL site theme.
 Changelog
 ---------
 
+0.7 (2014-06-26)
+================
+
+- Fix upgrade related css issues. [taito]
+
 0.6 (2013-08-08)
 ================
 
@@ -16,27 +21,27 @@ Changelog
 0.5 (2013-02-12)
 ================
 
-- Made external resources not cacheable. [taito]
+- Make external resources not cacheable. [taito]
 
 0.4 (2013-02-12)
 ================
 
-- Added css to override navigation's background color. [taito]
+- Add css to override navigation's background color. [taito]
 
 0.3 (2013-01-11)
 ================
 
-- Removed dependency from plone.app.theming. [taito]
+- Remove dependency from plone.app.theming. [taito]
 
 0.2 (2012-12-09)
 ================
 
-- Updated dependencies. [taito]
+- Update dependencies. [taito]
 
 0.1 (2012-12-08)
 ================
 
-- Updated dependencies. [taito]
+- Update dependencies. [taito]
 
 0.0.0.1 (2012-11-28)
 ====================

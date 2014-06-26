@@ -1,3 +1,490 @@
+/* SIVUSTON LEVEYS */
+
+#portal-header, #portal-columns {
+    width: 90%;
+}
+
+#portal-columns {
+    margin: 0px 5%;
+}
+
+.carousel {
+    width: 90%;
+}
+
+#footer-info {
+    width: 90%;
+}
+
+#footer-subfolders {
+    width: 90%;
+}
+
+/* YLEISET */
+
+body {
+font-family: 'Droid Sans',"Helvetica Neue",Arial,FreeSans,sans-serif;
+font-weight: 400;
+letter-spacing: 0.02em;
+}
+
+#portal-logo img {
+width: 250px;
+}
+
+#portal-body {
+background-image: none;
+background: #408440;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Cambo', serif;
+font-weight: normal;
+color: #333333;
+}
+
+h3 {
+font-size: 1.6em;
+line-height: 1.1em;
+margin-top: 0.25em;
+margin-bottom: 0.5em;
+}
+
+#content  {
+font-size: 100%;
+line-height: 1.2em;
+}
+
+#content>img  {
+margin-bottom: 1em;
+}
+
+#content .documentDescription {
+color: #333;
+padding-bottom: 0.8em;
+font-size: 100%;
+font-family: 'Droid Sans';
+font-weight: normal;
+}
+
+#content ul {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#content li {
+line-height: 1.2em;
+}
+
+#portal-columns {
+background: white;
+border-radius: 4px 4px 0 0;
+float: left;
+padding: 0.6em 0 0 0;
+}
+
+.crop-frame {
+border: 1px solid #E3E3E3;
+float: left;
+padding: 3px;
+}
+
+.image-inline {
+border: none;
+}
+
+.ruutu {
+width: 97%;
+background-color: #aed099;
+margin-top: 20px;
+margin-right: 0;
+margin-bottom: 25px;
+margin-left: 0;
+padding-top: 12px;
+padding-right: 12px;
+padding-bottom: 12px;
+padding-left: 15px;
+border: 0px solid #000000;
+}
+
+abbr {border: none;
+}
+
+/* HEADER ja TOP */
+
+input.searchButton {
+background: #408440;
+border: none;
+border-radius: 3px;
+color: white;
+padding: 0.3em 0.4em;
+}
+
+#portal-top {
+background-attachment: fixed;
+    background-image: url(http://www.luontoliitto.fi/header-tausta-tst1/image);
+    background-repeat: repeat;
+    background-position: center top;
+}
+
+.site-metsa #portal-top {
+background-attachment: fixed;
+    background-image: url(http://www.luontoliitto.fi/metsa/header-tausta-metsa/image);
+    background-repeat: repeat;
+    background-position: center top;
+}
+
+#portal-siteactions {
+background:rgba(255,255,255,0.75);
+margin-top: 0;
+padding-top: 0.25em;
+padding-bottom: 0.2em;
+}
+
+#portal-header {
+    margin: auto;
+padding-right: 10px;
+padding-left: 0;
+}
+
+/* LINKIT ja HOVERIT */
+
+a:link, a:visited, #content a:link, #content a:visited, dl.portlet a:link, dl.portlet a:visited {
+border: none;
+color: #408440;
+}
+
+a:hover {
+color: #3FA535;
+}
+
+dl.portlet a:hover {
+color: #000000 !important;
+text-decoration: underline;
+}
+
+dl.portlet ul.navTreeLevel0 > li.navTreeItem > a.state-published:hover {
+    color: #ffffff !important;
+text-decoration: underline;
+}
+
+/* TAPAHTUMAT */
+
+#content .eventDetails {
+margin-top: 0;
+}
+
+.eventDetails {
+float: left;
+clear: left;
+margin: 0 1em 0.5em 0;
+}
+
+#content .description {
+margin-bottom: 1em ;
+}
+
+.eventDetail>h3 {
+font-family: 'Droid Sans',"Helvetica Neue",Arial,FreeSans,sans-serif;
+font-weight: 400;
+}
+
+#content .eventDetails .eventDetail h3 {
+font-size: 0.9em;
+}
+
+#content .eventDetails .eventDetail div {
+font-size: 0.9em;
+}
+/* MURUPOLKU */
+
+#portal-breadcrumbs {
+line-height: 1em;
+letter-spacing: 0.05em;
+}
+
+/* KARUSELLI */
+
+.carousel-link {
+    z-index: 99;
+}
+
+.carousel-pager {
+    padding-right: 10px;
+    margin-bottom: 10px;
+    z-index: 3;
+}
+
+.carousel-body {
+margin-top: 0.7em;
+}
+
+.carousel-image img {
+border-radius: 4px 0 0 4px;
+}
+
+.carousel, .carousel-banners, .carousel-text {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+height: 290px;
+}
+
+.carousel-banner  {
+-webkit-border-bottom-left-radius: 4px;
+-moz-border-radius-bottomleft: 4px;
+border-bottom-left-radius: 4px;
+}
+
+.carousel-title {
+font-family: 'Cambo', serif;
+letter-spacing: 0.03em;
+}
+
+.carousel-text  {
+background-color: transparent;
+font-size: 1.1em;
+}
+
+.carousel-link  {
+font-size: 90%;
+}
+
+/* NAVIGAATIOT */
+
+dl.portlet {
+    font-size: 90%;
+}
+
 dl.portlet ul.navTreeLevel0 > li.navTreeItem {
     background: #3FA535;
+}
+
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+line-height:1.5;
+}
+
+dl.portlet ul.navTreeLevel1 .navTreeItem {
+margin-top: 0.4em;
+line-height: 1.35em;
+}
+
+#portal-globalnav  {
+background:rgba(255,255,255,0.85);
+border-radius: 3px 3px 0 0 ;
+}
+
+#portal-globalnav li a {
+font-size: 1.1em;
+-webkit-border-radius: 3px 3px 0 0;
+-moz-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+border-right: none;
+min-width: 0;
+padding: 0.3em 0.9em 0.4em 0.9em;
+}
+
+#portal-globalnav li a {
+margin: 0;
+}
+
+#portal-globalnav .selected a {
+background: none repeat scroll 0 0 #408440;
+}
+
+#portal-globalnav li a:hover {
+background: none repeat scroll 0 0 #3FA535;
+}
+
+#portal-globalnav .selected a:hover {
+background: none repeat scroll 0 0 #3FA535;
+}
+
+dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
+color: #408440;
+}
+
+/* SOVELMAPALKIT */
+
+dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
+color: #e9ffb3;
+}
+
+dt {
+    font-weight:normal;
+}
+
+dl.portlet ul.navTreeLevel0 > li.navTreeItem {
+border-bottom: none;
+border-radius: 3px;
+}
+
+dl.portlet ul.navTreeLevel0 > li.navTreeCurrentNode > a.state-published, dl.portlet ul.navTreeLevel0 > li.navTreeItemInPath > a.state-published {
+background-color: #408440;
+border-radius: 3px;
+padding: 0.25em 0;
+}
+
+dl.portlet ul.navTreeLevel0 > li.navTreeCurrentItem {
+background-color: #ffffff;
+}
+
+li.navTreeItem a:hover {
+    color: #F00;
+    text-decoration: underline;
+}
+
+/* Transparent background */
+dl.portlet ul.navTree li.navTreeCurrentNode,
+dl.portlet ul.navTree li.navTreeItemInPath {
+    background-color: transparent;
+}
+
+dl.portlet dt, div.portletAssignments div.portletHeader {
+background: #3FA535;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+margin-bottom: 3px;
+}
+
+dl.portlet {
+    margin-bottom: 0.3em;
+}
+
+dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
+color: #ffffff;
+}
+
+dt.portletHeader {
+color: #ffffff;
+}
+
+dl.portlet dd.portletItem {
+padding-top: 2px;
+padding-bottom: 1px;
+}
+
+.portletItemDetails {
+font-size: 85%;
+font-color: #ccc;
+padding-top: .1em;
+line-height: 1.1em;
+margin-left: 0;
+display: block;
+}
+
+#content li, dl.portlet li, div.portletStaticText li {
+    margin-bottom: 0.5em;
+    line-height: 1em;
+    display: list-item;
+}
+
+dl.portlet ul.navTree li a.navTreeCurrentItem, dl.portlet ul.navTree li.navTreeItemInPath a.navTreeCurrentItem {
+    color: #000000 !important;
+}
+
+dl.portlet dd.portletFooter {
+padding-top: 0.2em;
+padding-bottom: 0;
+}
+
+/* FOOTER-OSASTO */
+
+#footer-info p {
+margin-bottom: 0.3em;
+}
+
+#footer-info h1 {
+display: none;
+}
+
+#portal-footer-wrapper {
+background: #355135;
+line-height: 130%;
+padding: 2em 0;
+}
+
+#footer-info-nuorten_luonto, #footer-info-luontoliitto  {
+padding-right: 1em;
+}
+
+#footer-info-luontoliitto img  {
+border: none;
+margin-right: 0.3em;
+}
+
+#footer-subfolders {
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: #5d745F;
+width: 82%;
+padding-top: 2em;
+}
+
+#footer-subfolders article {
+border-left: 1px solid #5d745F;
+padding: 0 0.5em;
+margin-bottom: 1em;
+}
+
+img.image-left {
+margin-right: 0.8em;
+border: 2px solid #ffffff;
+}
+
+.portletStaticText > a .external-link {
+padding-top: 2em;
+}
+
+#content h1, h2 {
+letter-spacing: 0.03em;
+line-height: 1em;
+padding-bottom: 0.7em;
+}
+
+#content div.newsImageContainer {
+float: left;
+margin: 0.4em 1em 0.5em 0;
+}
+
+#portal-personaltools {
+border-bottom-right-radius: 0.3em;
+border-bottom-left-radius: 0.3em;
+-webkit-border-bottom-right-radius: 0.3em;
+-webkit-border-bottom-left-radius: 0.3em;
+-moz-border-radius-bottomleft: 0.3em;
+-moz-border-radius-bottomright: 0.3em;
+}
+
+/* FEEDIT */
+
+#main-feed h2 {
+font-size: 0.8em;
+font-family: 'Droid Sans',"Helvetica Neue",Arial,FreeSans,sans-serif;
+font-weight: 400;
+}
+
+#main-feed h1  {
+padding-bottom: 0.2em;
+}
+
+#event-news-feed > h1 {
+font-size: 1.1em;
+line-height: 0.3em;
+border-bottom: 1px solid #E3E3E3;
+}
+
+#event-news-feed h2 {
+font-family: 'Droid Sans',"Helvetica Neue",Arial,FreeSans,sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+#event-news-feed article h2 {
+font-size: 0.8em;
+}
+
+#event-news-feed article {
+margin-bottom: 0.1em;
 }

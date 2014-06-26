@@ -1,5 +1,4 @@
 from Products.CMFCore.utils import getToolByName
-from abita.utils.utils import reimport_profile
 
 import logging
 
@@ -24,7 +23,3 @@ def upgrade_0_to_1(context, logger=None):
     """Installs Products.PloneFormGen and collective.cropimage."""
     packages = ['collective.folderlogo', 'Products.PloneFormGen']
     install_packages(context, packages, logger)
-
-
-def reimport_cssregistry(context):
-    reimport_profile(context, PROFILE_ID, 'cssregistry')

@@ -23,7 +23,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'abita.utils',
         'setuptools',
         'sll.basetheme',
         'sll.carousel',
